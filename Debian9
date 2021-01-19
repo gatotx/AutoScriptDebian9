@@ -371,15 +371,12 @@ apt -y autoremove
 apt -y autoclean
 apt -y clean
 
-#pivpn
-curl https://raw.githubusercontent.com/pivpn/pivpn/master/auto_install/install.sh | bash
-
 #v2ray
 source <(curl -sL https://multi.netlify.app/v2ray.sh)
 
-#shadowsock
-wget -N --no-check-certificate -c -t3 -T60 -O ss-plugins.sh https://git.io/fjlbl 
-chmod +x ss-plugins.sh
+#pivpn
+curl https://raw.githubusercontent.com/pivpn/pivpn/master/auto_install/install.sh | bash
+
 # info
 clear
 echo " "
@@ -418,7 +415,7 @@ echo "Premium Script Information"  | tee -a log-install.txt
 echo "   To display list of commands: menu"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "   Explanation of scripts and VPS setup" | tee -a log-install.txt
-echo "   follow this link: bit.ly/DopekidScriptSetup"  | tee -a log-install.txt
+echo "   follow this link: t.me/Jo3k3r"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Important Information"  | tee -a log-install.txt
 echo "   - Download Config OpenVPN : http://$MYIP:85/Jokerteam.ovpn"  | tee -a log-install.txt
