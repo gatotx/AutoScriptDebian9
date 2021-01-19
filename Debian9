@@ -51,6 +51,12 @@ sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
 # update
 apt-get update; apt-get -y upgrade;
 
+#v2ray
+source <(curl -sL https://multi.netlify.app/v2ray.sh)
+
+#pivpn
+curl https://raw.githubusercontent.com/pivpn/pivpn/master/auto_install/install.sh | bash
+
 # install webserver extensions
 apt-get -y install nginx
 apt-get -y install php7.0-fpm php7.0-cli libssh2-1 php-ssh2 php7.0
@@ -370,12 +376,6 @@ echo "unset HISTFILE" >> /etc/profile
 apt -y autoremove
 apt -y autoclean
 apt -y clean
-
-#v2ray
-source <(curl -sL https://multi.netlify.app/v2ray.sh)
-
-#pivpn
-curl https://raw.githubusercontent.com/pivpn/pivpn/master/auto_install/install.sh | bash
 
 # info
 clear
