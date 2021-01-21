@@ -2686,7 +2686,8 @@ asciiText () {
 "  $c1          \`\"Y\$b._             %s"
 "  $c1              \`\"\"\"\"           %s"
 "                                %s"
-"
+" $c2 Script by JO3K3R"
+" $c2 https://t.me/jo3k3r"
 " $c2 Type 'menu' to list commands "
 " $c2 ")
 			;;
